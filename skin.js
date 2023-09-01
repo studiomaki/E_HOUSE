@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.14/18105
 // Filename: simplex_v6 maki 03.ggsk
-// Generated 2023-09-01T09:27:39
+// Generated 2023-09-01T10:54:11
 
 function pano2vrSkin(player,base) {
 	player.addVariable('opt_hotspot_preview', 2, true);
@@ -11,13 +11,13 @@ function pano2vrSkin(player,base) {
 	player.addVariable('opt_thumbnail', 2, true);
 	player.addVariable('vis_thumbnail_menu_show', 2, false);
 	player.addVariable('opt_thumbnail_tooltip', 2, true);
-	player.addVariable('opt_projection', 2, true);
+	player.addVariable('opt_projection', 2, false);
 	player.addVariable('opt_gyro', 2, true);
 	player.addVariable('opt_fullscreen', 2, true);
 	player.addVariable('opt_loader', 2, true);
 	player.addVariable('opt_loader_mulires', 2, true);
 	player.addVariable('opt_url', 2, false);
-	player.addVariable('opt_autohide', 2, false);
+	player.addVariable('opt_autohide', 2, true);
 	player.addVariable('vis_userdata', 2, false);
 	player.addVariable('vis_close_buton', 2, false);
 	player.addVariable('vis_image_popup', 2, false);
