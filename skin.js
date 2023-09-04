@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.14/18105
 // Filename: simplex_v6 maki 03.ggsk
-// Generated 2023-09-04T17:31:51
+// Generated 2023-09-04T18:13:51
 
 function pano2vrSkin(player,base) {
 	player.addVariable('opt_hotspot_preview', 2, true);
@@ -10813,6 +10813,7 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
+		hs+='cursor : pointer;';
 		hs+='height : 20px;';
 		hs+='left : -10000px;';
 		hs+='position : absolute;';
@@ -10825,7 +10826,6 @@ function pano2vrSkin(player,base) {
 		el.style[domTransform + 'Origin']='50% 50%';
 		hs ='position:absolute;';
 		hs += 'box-sizing: border-box;';
-		hs+='cursor: default;';
 		hs+='left: 0px;';
 		hs+='top:  0px;';
 		hs+='width: 120px;';
@@ -10882,6 +10882,7 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
+		hs+='cursor : pointer;';
 		hs+='height : 20px;';
 		hs+='left : -10000px;';
 		hs+='position : absolute;';
@@ -10894,7 +10895,6 @@ function pano2vrSkin(player,base) {
 		el.style[domTransform + 'Origin']='50% 50%';
 		hs ='position:absolute;';
 		hs += 'box-sizing: border-box;';
-		hs+='cursor: default;';
 		hs+='left: 0px;';
 		hs+='top:  0px;';
 		hs+='width: 120px;';
@@ -10951,6 +10951,7 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
+		hs+='cursor : pointer;';
 		hs+='height : 20px;';
 		hs+='left : -10000px;';
 		hs+='position : absolute;';
@@ -10963,7 +10964,6 @@ function pano2vrSkin(player,base) {
 		el.style[domTransform + 'Origin']='50% 50%';
 		hs ='position:absolute;';
 		hs += 'box-sizing: border-box;';
-		hs+='cursor: default;';
 		hs+='left: 0px;';
 		hs+='top:  0px;';
 		hs+='width: 120px;';
