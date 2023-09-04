@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.14/18105
 // Filename: simplex_v6 maki 03.ggsk
-// Generated 2023-09-04T16:23:48
+// Generated 2023-09-04T17:31:51
 
 function pano2vrSkin(player,base) {
 	player.addVariable('opt_hotspot_preview', 2, true);
@@ -5574,8 +5574,8 @@ function pano2vrSkin(player,base) {
 				if (posX < 0) {
 					var diffX = Math.floor(posX * me._thumbnail_menu_mobile.ggHPercentVisible);
 					me._thumbnail_menu_mobile.ggScrollByXSmooth(diffX);
-				} else if (posX + width > me._thumbnail_menu_mobile.clientWidth - (me._thumbnail_menu_mobile.ggVertScrollVisible ? 15 : 0)) {
-					var diffX = Math.ceil(((posX + width) - (me._thumbnail_menu_mobile.clientWidth - (me._thumbnail_menu_mobile.ggVertScrollVisible ? 15 : 0))) * me._thumbnail_menu_mobile.ggHPercentVisible);
+				} else if (posX + width > me._thumbnail_menu_mobile.clientWidth - (me._thumbnail_menu_mobile.ggVertScrollVisible ? 10 : 0)) {
+					var diffX = Math.ceil(((posX + width) - (me._thumbnail_menu_mobile.clientWidth - (me._thumbnail_menu_mobile.ggVertScrollVisible ? 10 : 0))) * me._thumbnail_menu_mobile.ggHPercentVisible);
 					me._thumbnail_menu_mobile.ggScrollByXSmooth(diffX);
 				}
 			}
@@ -5583,8 +5583,8 @@ function pano2vrSkin(player,base) {
 				if (posY < 0) {
 					var diffY = Math.floor(posY * me._thumbnail_menu_mobile.ggVPercentVisible);
 					me._thumbnail_menu_mobile.ggScrollByYSmooth(diffY);
-				} else if (posY + height > me._thumbnail_menu_mobile.clientHeight - (me._thumbnail_menu_mobile.ggHorScrollVisible ? 15 : 0)) {
-					var diffY = Math.ceil(((posY + height) - (me._thumbnail_menu_mobile.clientHeight - (me._thumbnail_menu_mobile.ggHorScrollVisible ? 15 : 0))) * me._thumbnail_menu_mobile.ggVPercentVisible);
+				} else if (posY + height > me._thumbnail_menu_mobile.clientHeight - (me._thumbnail_menu_mobile.ggHorScrollVisible ? 10 : 0)) {
+					var diffY = Math.ceil(((posY + height) - (me._thumbnail_menu_mobile.clientHeight - (me._thumbnail_menu_mobile.ggHorScrollVisible ? 10 : 0))) * me._thumbnail_menu_mobile.ggVPercentVisible);
 					me._thumbnail_menu_mobile.ggScrollByYSmooth(diffY);
 				}
 			}
@@ -5634,12 +5634,12 @@ function pano2vrSkin(player,base) {
 		}
 		elHorScrollBg = me._thumbnail_menu_mobile__horScrollBg = document.createElement('div');
 		el.appendChild(elHorScrollBg);
-		elHorScrollBg.setAttribute('style', 'position: absolute; left: 0px; bottom: 0px; visibility: hidden; width: 400px; height: 15px; background-color: rgba(255,255,255,0.392157); pointer-events: auto;');
+		elHorScrollBg.setAttribute('style', 'position: absolute; left: 0px; bottom: 0px; visibility: hidden; width: 400px; height: 10px; background-color: rgba(255,255,255,0.392157); pointer-events: auto;');
 		elHorScrollBg.className='ggskin ggskin_scrollarea_hscrollbg';
 		elHorScrollFg = me._thumbnail_menu_mobile__horScrollFg = document.createElement('div');
 		elHorScrollBg.appendChild(elHorScrollFg);
 		elHorScrollFg.className='ggskin ggskin_scrollarea_hscrollfg';
-		elHorScrollFg.setAttribute('style', 'position: absolute; left: 0px; top: 0px; visibility: hidden; width: 400px; height: 15px; background-color: rgba(255,255,255,1); pointer-events: auto;');
+		elHorScrollFg.setAttribute('style', 'position: absolute; left: 0px; top: 0px; visibility: hidden; width: 400px; height: 10px; background-color: rgba(255,255,255,1); pointer-events: auto;');
 		me._thumbnail_menu_mobile.ggScrollPosX = 0;
 		me._thumbnail_menu_mobile.ggScrollPosXPercent = 0.0;
 		elHorScrollFg.onmousedown = function(e) {
@@ -5734,7 +5734,7 @@ function pano2vrSkin(player,base) {
 		});
 		elCornerBg = me._thumbnail_menu_mobile__cornerBg = document.createElement('div');
 		el.appendChild(elCornerBg);
-		elCornerBg.setAttribute('style', 'position: absolute; right: 0px; bottom: 0px; visibility: hidden; width: 15px; height: 15px; background-color: rgba(255,255,255,1);');
+		elCornerBg.setAttribute('style', 'position: absolute; right: 0px; bottom: 0px; visibility: hidden; width: 10px; height: 10px; background-color: rgba(255,255,255,1);');
 		elCornerBg.className='ggskin ggskin_scrollarea_scrollcorner';
 		el.ggId="thumbnail_menu_mobile";
 		el.ggDx=0;
@@ -5900,20 +5900,20 @@ function pano2vrSkin(player,base) {
 				this.ggContent.style.width = contentWidth + 'px';
 				this.ggContent.style.height = contentHeight + 'px';
 				var containerWidth = offsetWidthWithScale;
-				if (this.ggVertScrollVisible) containerWidth -= 15;
+				if (this.ggVertScrollVisible) containerWidth -= 10;
 				if (contentWidth < containerWidth) {
 					this.ggContent.style.left = '50%';
-					this.ggContent.style.marginLeft = ((contentWidth/-2) - (this.ggVertScrollVisible ? (15/2) : 0)) + 'px';
+					this.ggContent.style.marginLeft = ((contentWidth/-2) - (this.ggVertScrollVisible ? (10/2) : 0)) + 'px';
 				}
 				else {
 					this.ggContent.style.left = this.ggContentLeftOffset + 'px';
 					this.ggContent.style.marginLeft = '0px';
 				}
 				var containerHeight = this.clientHeight;
-				if (this.ggHorScrollVisible) containerHeight -= 15;
+				if (this.ggHorScrollVisible) containerHeight -= 10;
 				if (contentHeight < containerHeight) {
 					this.ggContent.style.top = '50%';
-					this.ggContent.style.marginTop = ((contentHeight/-2) - (this.ggHorScrollVisible ? (15/2) : 0))  + 'px';
+					this.ggContent.style.marginTop = ((contentHeight/-2) - (this.ggHorScrollVisible ? (10/2) : 0))  + 'px';
 				}
 				else {
 					this.ggContent.style.top = this.ggContentTopOffset + 'px';
@@ -5929,9 +5929,9 @@ function pano2vrSkin(player,base) {
 					me._thumbnail_menu_mobile.ggHorScrollVisible = false;
 				}
 				if(me._thumbnail_menu_mobile.ggHorScrollVisible) {
-					me._thumbnail_menu_mobile.ggAvailableHeight = me._thumbnail_menu_mobile.clientHeight - 15;
+					me._thumbnail_menu_mobile.ggAvailableHeight = me._thumbnail_menu_mobile.clientHeight - 10;
 					if (me._thumbnail_menu_mobile.ggVertScrollVisible) {
-						me._thumbnail_menu_mobile.ggAvailableWidth = me._thumbnail_menu_mobile.clientWidth - 15;
+						me._thumbnail_menu_mobile.ggAvailableWidth = me._thumbnail_menu_mobile.clientWidth - 10;
 						me._thumbnail_menu_mobile.ggAvailableWidthWithScale = me._thumbnail_menu_mobile.getBoundingClientRect().width - me._thumbnail_menu_mobile__horScrollBg.getBoundingClientRect().height;
 					} else {
 						me._thumbnail_menu_mobile.ggAvailableWidth = me._thumbnail_menu_mobile.clientWidth;
@@ -10550,7 +10550,7 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
-		hs+='height : calc(75%  - 100px);';
+		hs+='height : calc(70%  - 100px);';
 		hs+='position : absolute;';
 		hs+='right : 10px;';
 		hs+='top : 120px;';
